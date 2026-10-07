@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CeraVe SEO Strategy &amp; Content Campaign | Cherry</title>
+  <meta name="description" content="Marketing case study by Cherry: an SEO content strategy for CeraVe built on audience research, keyword and search-intent analysis, and three SEO blog posts.">
+  <meta name="theme-color" content="#0B1B2E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <!-- NAV -->
+  <header class="navbar" id="navbar">
+    <a href="#top" class="brand" aria-label="Cherry, back to top">Cherry<span>.</span></a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Case study sections">
+      <a href="#overview" data-nav>Overview</a>
+      <a href="#audience" data-nav>Audience</a>
+      <a href="#keywords" data-nav>Keywords</a>
+      <a href="#content" data-nav>Content</a>
+      <a href="#ai" data-nav>AI &amp; SEO</a>
+      <a href="#takeaways" data-nav>Takeaways</a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">Marketing case study · CeraVe-focused project</p>
+        <h1>CeraVe SEO Strategy <em>&amp; Content Campaign</em></h1>
+        <p class="subtitle">SEO Research · Audience Insights · Content Strategy</p>
+        <p class="summary">
+          Built an SEO content strategy for CeraVe focused on a high-intent consumer segment.
+          Researched and evaluated 20 keywords using Google Trends and Semrush, analyzed search intent
+          and keyword difficulty, and developed three SEO articles aligned with the brand’s voice
+          and customer needs.
+        </p>
+        <div class="hero-actions">
+          <a href="#keywords" class="btn btn-primary">See the keyword research
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#content" class="btn btn-ghost">Read the articles</a>
+        </div>
+      </div>
+
+      <!-- Query -> answer illustration (queries and titles are from the project) -->
+      <div class="hero-visual" aria-label="Illustration: three search queries and the article written for each">
+        <div class="search-card">
+          <p class="card-kicker">From search query to article</p>
+          <div class="search-bar" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+            <span id="heroQuery">simple skincare routine for men</span><i class="caret"></i>
+          </div>
+          <div class="answer" id="heroAnswer">
+            <span class="intent-tag informational">Informational</span>
+            <p class="answer-title">Simple Skincare Routine for Men: A No-Stress Guide for Dry Skin</p>
+          </div>
+          <ul class="query-list" id="queryList">
+            <li><button type="button" class="query-btn active" data-i="0">simple skincare routine for men</button></li>
+            <li><button type="button" class="query-btn" data-i="1">cerave vs cetaphil cleanser</button></li>
+            <li><button type="button" class="query-btn" data-i="2">how to pick the right cleanser</button></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- METRICS -->
+    <section class="metrics" aria-label="Project at a glance">
+      <div class="metric"><strong>20</strong><span>keywords evaluated</span></div>
+      <div class="metric"><strong>2</strong><span>research tools: Google Trends and Semrush</span></div>
+      <div class="metric"><strong>2</strong><span>search intents mapped: informational and commercial</span></div>
+      <div class="metric"><strong>3</strong><span>SEO articles developed</span></div>
+    </section>
+
+    <!-- 01 OVERVIEW -->
+    <section class="section" id="overview">
+      <div class="two-col">
+        <div data-reveal>
+          <p class="label">01 — Project overview</p>
+          <h2>Content built for the moment <em>a skincare question becomes a search.</em></h2>
+        </div>
+        <div class="prose" data-reveal style="--d:100ms">
+          <p>
+            This project focused on creating search-optimized content for CeraVe, aimed at one clearly defined
+            high-intent consumer persona: someone who uses Google to research skincare concerns and compare product options.
+          </p>
+          <p>
+            I translated that persona’s questions into a keyword strategy, then into three articles built to inform,
+            guide and build trust.
+          </p>
+          <dl class="facts">
+            <div><dt>Type</dt><dd>CeraVe-focused marketing project</dd></div>
+            <div><dt>My role</dt><dd>Audience analysis, keyword research, SEO content development</dd></div>
+            <div><dt>Brand context</dt><dd>Dermatologist-developed, barrier-restoring skincare made accessible to all</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 OBJECTIVE -->
+    <section class="section tinted" id="objective">
+      <div class="head" data-reveal>
+        <p class="label">02 — Campaign objective</p>
+        <h2>Reach people at the search stage with answers <em>they can trust.</em></h2>
+        <p class="lead">
+          Skincare often starts with a Google search. The goal was to show up at that moment with helpful, credible,
+          search-optimized content.
+        </p>
+      </div>
+      <div class="cards three">
+        <article class="card" data-reveal>
+          <span class="num">01</span>
+          <h3>Build trust</h3>
+          <p>Answer practical skincare questions clearly, in a credible, no-fluff voice.</p>
+        </article>
+        <article class="card" data-reveal style="--d:100ms">
+          <span class="num">02</span>
+          <h3>Support discovery</h3>
+          <p>Shape content around the concerns and comparisons people already bring to search.</p>
+        </article>
+        <article class="card" data-reveal style="--d:200ms">
+          <span class="num">03</span>
+          <h3>Connect to solutions</h3>
+          <p>Introduce relevant CeraVe products naturally, inside content that helps first.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 03 AUDIENCE -->
+    <section class="section" id="audience">
+      <div class="head" data-reveal>
+        <p class="label">03 — Target audience</p>
+        <h2>One persona, <em>defined by how he searches.</em></h2>
+      </div>
+
+      <div class="persona" data-reveal>
+        <div class="persona-id">
+          <span class="badge">High-intent segment</span>
+          <h3>Carlos</h3>
+          <p class="persona-role">The Practical Skincare Researcher</p>
+          <p>
+            A 36-year-old Latino man who uses Google to solve skincare problems like dryness and product confusion.
+            He represents a high-intent, underserved audience that prefers functional, science-backed solutions.
+          </p>
+        </div>
+        <div class="persona-grid">
+          <div class="mini"><h4>Pain points</h4><p>Dry skin and confusion about which products to use</p></div>
+          <div class="mini"><h4>Priorities</h4><p>Functional, science-backed information</p></div>
+          <div class="mini"><h4>Search habits</h4><p>Searches to educate himself, compare options and find simple routines</p></div>
+          <div class="mini"><h4>Channel fit</h4><p>Not active on Instagram or TikTok, so search and YouTube are the channels that reach him</p></div>
+        </div>
+      </div>
+
+      <p class="callout" data-reveal>
+        <strong>Why it matters:</strong> the channel choice followed the audience’s behavior, not the other way around.
+        For Carlos, search is the primary route to the brand.
+      </p>
+    </section>
+
+    <!-- 04 KEYWORD RESEARCH -->
+    <section class="section tinted" id="keywords">
+      <div class="head" data-reveal>
+        <p class="label">04 — Keyword research</p>
+        <h2>From persona needs <em>to search opportunities.</em></h2>
+        <p class="lead">
+          I focused on high-intent, problem-based queries over generic terms, and evaluated each one on trend,
+          volume, difficulty and intent.
+        </p>
+      </div>
+
+      <ol class="steps">
+        <li data-reveal>
+          <span class="step-n">1</span>
+          <h3>Understand</h3>
+          <p>Reviewed the persona’s pain points, search habits and priorities.</p>
+        </li>
+        <li data-reveal style="--d:80ms">
+          <span class="step-n">2</span>
+          <h3>Expand</h3>
+          <p>Grew a starting list of 10 keywords to 20 by adding 10 high-intent queries.</p>
+        </li>
+        <li data-reveal style="--d:160ms">
+          <span class="step-n">3</span>
+          <h3>Evaluate</h3>
+          <p>Google Trends for trend direction. Semrush for search volume, keyword difficulty and intent.</p>
+        </li>
+        <li data-reveal style="--d:240ms">
+          <span class="step-n">4</span>
+          <h3>Prioritize</h3>
+          <p>Separated informational from commercial intent and chose keywords for each article.</p>
+        </li>
+      </ol>
+
+      <!-- Insights -->
+      <div class="insights" data-reveal>
+        <div class="insight">
+          <h3>Search intent</h3>
+          <div class="bar" role="img" aria-label="11 informational keywords and 9 commercial keywords">
+            <span class="seg info" style="flex:11">11 informational</span>
+            <span class="seg comm" style="flex:9">9 commercial</span>
+          </div>
+          <p>“Help me understand” queries and “help me choose” queries need different content.</p>
+        </div>
+        <div class="insight">
+          <h3>Trend direction</h3>
+          <div class="bar" role="img" aria-label="10 keywords trending up and 10 flat">
+            <span class="seg up" style="flex:10">10 up</span>
+            <span class="seg flat" style="flex:10">10 flat</span>
+          </div>
+          <p>None of the 20 keywords was rated as trending down.</p>
+        </div>
+        <div class="insight">
+          <h3>Keyword difficulty</h3>
+          <div class="bar" role="img" aria-label="8 low, 11 medium and 1 high difficulty keywords">
+            <span class="seg low" style="flex:8">8 low</span>
+            <span class="seg med" style="flex:11">11 medium</span>
+            <span class="seg high" style="flex:1" title="1 high"></span>
+          </div>
+          <p>Difficulty skewed low to medium. Only one keyword was rated high.</p>
+        </div>
+      </div>
+
+      <!-- Interactive table -->
+      <div class="explorer" data-reveal>
+        <div class="explorer-top">
+          <div>
+            <h3>Keyword table</h3>
+            <p class="muted">Volume and difficulty are recorded as qualitative ratings (Low, Medium, High).</p>
+          </div>
+          <div class="filters" role="group" aria-label="Filter keywords">
+            <button type="button" class="chip active" data-filter="all" aria-pressed="true">All <b>20</b></button>
+            <button type="button" class="chip" data-filter="informational" aria-pressed="false">Informational <b>11</b></button>
+            <button type="button" class="chip" data-filter="commercial" aria-pressed="false">Commercial <b>9</b></button>
+            <button type="button" class="chip" data-filter="used" aria-pressed="false">Used in articles <b>9</b></button>
+          </div>
+        </div>
+
+        <div class="table-wrap" tabindex="0" role="region" aria-label="Keyword table, scrollable">
+          <table id="kwTable">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Keyword</th>
+                <th scope="col">Trend</th>
+                <th scope="col">Volume</th>
+                <th scope="col">Difficulty</th>
+                <th scope="col">Intent</th>
+                <th scope="col">Article</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-intent="informational">
+                <td class="n">1</td>
+                <th scope="row">how to start a skincare routine for men</th>
+                <td><span class="trend up"><i aria-hidden="true">↑</i>Up</span></td>
+                <td><span class="lvl high">High</span></td>
+                <td><span class="lvl medium">Medium</span></td>
+                <td><span class="intent-tag informational">Informational</span></td>
+                <td><span class="dash">–</span></td>
+              </tr>
+              <tr data-intent="commercial" data-used="1">
+                <td class="n">2</td>
+                <th scope="row">best skincare products for men 2024</th>
+                <td><span class="trend up"><i aria-hidden="true">↑</i>Up</span></td>
+                <td><span class="lvl high">High</span></td>
+                <td><span class="lvl high">High</span></td>
+                <td><span class="intent-tag commercial">Commercial</span></td>
+                <td><a class="art-link" href="#content">Article 02</a></td>
+              </tr>
+              <tr data-intent="commercial">
+                <td class="n">3</td>
+                <th scope="row">is cerave good for men</th>
+                <td><span class="trend flat"><i aria-hidden="true">→</i>Flat</span></td>
+                <td><span class="lvl medium">Medium</span></td>
+                <td><span class="lvl low">Low</span></td>
+                <td><span class="intent-tag commercial">Commercial</span></td>
+                <td><span class="dash">–</span></td>
+              </tr>
+              <tr data-intent="informational">
+                <td class="n">4</td>
+                <th scope="row">face wash steps for beginners</th>
+                <td><span class="trend flat"><i aria-hidden="true">→</i>Flat</span></td>
+                <td><span class="lvl medium">Medium</span></td>
+                <td><span class="lvl low">Low</span></td>
+                <td><span class="intent-tag informational">Informational</span></td>
+                <td><span class="dash">–</span></td>
+              </tr>
+              <tr data-intent="commercial" data-used="1">
+                <td class="n">5</td>
+                <th scope="row">cerave vs cetaphil cleanser</th>
+                <td><span class="trend up"><i aria-hidden="true">↑</i>Up</span></td>
+                <td><span class="lvl medium">Medium</span></td>
+                <td><span class="lvl medium">Medium</span></td>
+                <td><span class="intent-tag commercial">Commercial</span></td>
+                <td><a class="art-link" href="#content">Article 02</a></td>
+              </tr>
+              <tr data-intent="informational">
+                <td class="n">6</td>
+                <th scope="row">how to treat dry skin without moisturizer</th>
+                <td><span class="trend up"><i aria-hidden="true">↑</i>Up</span></td>
+                <td><span class="lvl medium">Medium</span></td>
+                <td><span class="lvl low">Low</span></td>
+                <td><span class="intent-tag informational">Informational</span></td>
+                <td><span class="dash">–</span></td>
+              </tr>
+              <tr data-intent="commercial">
+                <td class="n">7</td>
+                <th scope="row">best drugstore skincare routine for men</th>
+                <td><span class="trend up"><i aria-hidden="true">↑</i>Up</span></td>
+                <td><span class="lvl medium">Medium</span></td>
+                <td><span class="lvl medium">Medium</span></td>
+                <td><span class="intent-tag commercial">Commercial</span></td>
+                <td><span class="dash">–</span></td>
+              </tr>
+              <tr data-intent="informational" data-used="1">
+                <td class="n">8</td>
+                <th scope="row">what causes flaky skin on face</th>
+                <td><span class="trend flat"><i aria-hidden="true">→</i>Flat</span></td>
+                <td><span class="lvl high">High</span></td>
+                <td><span class="lvl medium">Medium</span></td>
+                <td><span class="intent-tag informational">Informational</span></td>
+                <td><a class="art-link" href="#content">Article 02</a></td>
+              </tr>
+              <tr data-intent="commercial" data-used="1">
+                <td class="n">9</td>
+                <th scope="row">fragrance free skincare for sensitive skin</th>
+                <td><span class="trend flat"><i aria-hidden="true">→</i>Flat</span></td>
+                <td><span class="lvl high">High</span></td>
+                <td><span class="lvl medium">Medium</span></td>
+                <td><span class="intent-tag commercial">Commercial</span></td>
+                <td><a class="art-link" href="#content">Article 03</a></td>
+              </tr>
+              <tr data-intent="informational" data-used="1">
+                <td class="n">10</td>
+                <th scope="row">how to pick the right cleanser</th>
+                <td><span class="trend flat"><i aria-hidden="true">→</i>Flat</span></td>
+                <td><span class="lvl high">High</span></td>
+                <td><span class="lvl medium">Medium</span></td>
+                <td><span class="intent-tag informational">Informational</span></td>
+                <td><a class="art-link" href="#content">Article 03</a></td>
+              </tr>
+              <tr data-intent="informational" data-used="1">
+                <td class="n">11</td>
+                <th scope="row">simple skincare routine for men <span class="src added">Added</span></th>
+                <td><span class="trend up"><i aria-hidden="true">↑</i>Up</span></td>
+                <td><span class="lvl high">High</span></td>
+                <td><span class="lvl medium">Medium</span></td>
+                <td><span class="intent-tag informational">Informational</span></td>
+                <td><a class="art-link" href="#content">Article 01</a></td>
+              </tr>
+              <tr data-intent="commercial">
+                <td class="n">12</td>
+                <th scope="row">best face wash for dry skin men <span class="src added">Added</span></th>
+                <td><span class="trend flat"><i aria-hidden="true">→</i>Flat</span></td>
+                <td><span class="lvl high">High</span></td>
+                <td><span class="lvl medium">Medium</span></td>
+                <td><span class="intent-tag commercial">Commercial</span></td>
+                <td><span class="dash">–</span></td>
+              </tr>
+              <tr data-intent="commercial">
+                <td class="n">13</td>
+                <th scope="row">cerave moisturizer for men review <span class="src added">Added</span></th>
+                <td><span class="trend up"><i aria-hidden="true">↑</i>Up</span></td>
+                <td><span class="lvl medium">Medium</span></td>
+                <td><span class="lvl low">Low</span></td>
+                <td><span class="intent-tag commercial">Commercial</span></td>
+                <td><span class="dash">–</span></td>
+              </tr>
+              <tr data-intent="informational" data-used="1">
+                <td class="n">14</td>
+                <th scope="row">why is my skin so dry even after moisturizing <span class="src added">Added</span></th>
+                <td><span class="trend up"><i aria-hidden="true">↑</i>Up</span></td>
+                <td><span class="lvl medium">Medium</span></td>
+                <td><span class="lvl low">Low</span></td>
+                <td><span class="intent-tag informational">Informational</span></td>
+                <td><a class="art-link" href="#content">Article 01</a></td>
+              </tr>
+              <tr data-intent="informational" data-used="1">
+                <td class="n">15</td>
+                <th scope="row">how often should men wash face <span class="src added">Added</span></th>
+                <td><span class="trend flat"><i aria-hidden="true">→</i>Flat</span></td>
+                <td><span class="lvl high">High</span></td>
+                <td><span class="lvl low">Low</span></td>
+                <td><span class="intent-tag informational">Informational</span></td>
+                <td><a class="art-link" href="#content">Article 01</a></td>
+              </tr>
+              <tr data-intent="commercial">
+                <td class="n">16</td>
+                <th scope="row">cerave hydrating cleanser benefits <span class="src added">Added</span></th>
+                <td><span class="trend up"><i aria-hidden="true">↑</i>Up</span></td>
+                <td><span class="lvl medium">Medium</span></td>
+                <td><span class="lvl low">Low</span></td>
+                <td><span class="intent-tag commercial">Commercial</span></td>
+                <td><span class="dash">–</span></td>
+              </tr>
+              <tr data-intent="informational">
+                <td class="n">17</td>
+                <th scope="row">skincare routine for beginners men dry skin <span class="src added">Added</span></th>
+                <td><span class="trend up"><i aria-hidden="true">↑</i>Up</span></td>
+                <td><span class="lvl medium">Medium</span></td>
+                <td><span class="lvl medium">Medium</span></td>
+                <td><span class="intent-tag informational">Informational</span></td>
+                <td><span class="dash">–</span></td>
+              </tr>
+              <tr data-intent="commercial">
+                <td class="n">18</td>
+                <th scope="row">best fragrance free moisturizer drugstore <span class="src added">Added</span></th>
+                <td><span class="trend flat"><i aria-hidden="true">→</i>Flat</span></td>
+                <td><span class="lvl high">High</span></td>
+                <td><span class="lvl medium">Medium</span></td>
+                <td><span class="intent-tag commercial">Commercial</span></td>
+                <td><span class="dash">–</span></td>
+              </tr>
+              <tr data-intent="informational">
+                <td class="n">19</td>
+                <th scope="row">can men use cerave products <span class="src added">Added</span></th>
+                <td><span class="trend flat"><i aria-hidden="true">→</i>Flat</span></td>
+                <td><span class="lvl medium">Medium</span></td>
+                <td><span class="lvl low">Low</span></td>
+                <td><span class="intent-tag informational">Informational</span></td>
+                <td><span class="dash">–</span></td>
+              </tr>
+              <tr data-intent="informational" data-used="1">
+                <td class="n">20</td>
+                <th scope="row">difference between cleanser and face wash <span class="src added">Added</span></th>
+                <td><span class="trend flat"><i aria-hidden="true">→</i>Flat</span></td>
+                <td><span class="lvl high">High</span></td>
+                <td><span class="lvl medium">Medium</span></td>
+                <td><span class="intent-tag informational">Informational</span></td>
+                <td><a class="art-link" href="#content">Article 03</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="muted small">Rows tagged “Added” are the 10 keywords I added to the starting list.</p>
+      </div>
+
+      <!-- Screenshot -->
+      <figure class="shot" data-reveal>
+        <button type="button" class="shot-btn" data-full="assets/keyword-sheet.jpg" data-alt="Original keyword research sheet, rows 4 to 18, with trend, volume, difficulty and intent ratings">
+          <img src="assets/keyword-sheet.jpg" alt="Original keyword research sheet, rows 4 to 18, with trend, volume, difficulty and intent ratings" loading="lazy" width="1311" height="1551">
+          <span class="shot-zoom">Enlarge</span>
+        </button>
+        <figcaption>
+          <strong>From the research sheet</strong>
+          Original working sheet, rows 4–18 of 20, with Google Trends and Semrush ratings.
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- 05 CONTENT STRATEGY -->
+    <section class="section" id="content">
+      <div class="head" data-reveal>
+        <p class="label">05 — Content strategy</p>
+        <h2>Three articles, <em>one search need each.</em></h2>
+        <p class="lead">
+          I selected keywords from the research and developed three SEO-focused blog posts designed to inform,
+          guide and build trust, each matched to a different type of search.
+        </p>
+      </div>
+
+      <!-- Article 1 -->
+      <article class="article" data-reveal>
+        <div class="article-meta">
+          <span class="article-n">Article 01</span>
+          <span class="intent-tag informational">Informational</span>
+          <h3>Simple Skincare Routine for Men: A No-Stress Guide for Dry Skin</h3>
+          <p>Makes the starting point feel simple, with a routine built around dryness and beginner questions.</p>
+          <p class="kw-label">Keywords worked in</p>
+          <ul class="kw-chips">
+            <li>simple skincare routine for men</li>
+            <li>why is my skin so dry even after moisturizing</li>
+            <li>how often should men wash face</li>
+          </ul>
+          <details class="full">
+            <summary>Read the full draft</summary>
+            <div class="full-text">
+              <p>If you’ve ever Googled “simple skincare routine for men” and felt confused, you’re not alone. A lot of guys just want something that works without overcomplicating things.</p>
+              <p>The truth is, you don’t need 10 products. You just need a few basics that actually help your skin—especially if you’re dealing with dryness.</p>
+              <h4>Step 1: Start with the Right Cleanser</h4>
+              <p>One of the biggest mistakes beginners make is using harsh soap. It might feel clean, but it strips your skin and makes dryness worse.</p>
+              <p>If you’re dealing with dry skin, look for something gentle like a hydrating cleanser. Products like CeraVe Hydrating Cleanser are designed to clean your face without removing your natural moisture barrier.</p>
+              <p>This matters because your skin barrier is what keeps hydration in.</p>
+              <h4>Step 2: Moisturize (Yes, Every Day)</h4>
+              <p>A lot of people search “why is my skin so dry even after moisturizing.” Usually, it’s because they’re either skipping moisturizer or using the wrong one.</p>
+              <p>A good fragrance-free moisturizer helps restore your skin instead of irritating it. This is especially important if you have sensitive skin.</p>
+              <p>Look for ingredients like ceramides and hyaluronic acid—they help your skin hold onto water.</p>
+              <h4>Step 3: Keep It Consistent</h4>
+              <p>You don’t need a complicated routine. Just:</p>
+              <ul><li>Wash your face twice a day</li><li>Use moisturizer after</li></ul>
+              <p>That’s it.</p>
+              <p>If you’re wondering how often men should wash their face, twice a day is enough. Overwashing can actually make dryness worse.</p>
+              <h4>Why This Routine Works</h4>
+              <p>This routine focuses on repairing your skin barrier instead of overwhelming it. That’s exactly what most beginners need.</p>
+              <p>If you’re just starting out, simple is better. Once your skin improves, you can always add more steps later.</p>
+            </div>
+          </details>
+        </div>
+        <figure class="shot compact">
+          <button type="button" class="shot-btn" data-full="assets/article-1.jpg" data-alt="Opening of the article Simple Skincare Routine for Men">
+            <img src="assets/article-1.jpg" alt="Opening of the article Simple Skincare Routine for Men" loading="lazy" width="1181" height="780">
+            <span class="shot-zoom">Enlarge</span>
+          </button>
+          <figcaption>Opening of the draft</figcaption>
+        </figure>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="article flip" data-reveal>
+        <div class="article-meta">
+          <span class="article-n">Article 02</span>
+          <span class="intent-tag commercial">Commercial</span>
+          <h3>CeraVe vs Cetaphil Cleanser: Which One Is Better for Dry Skin?</h3>
+          <p>Addresses product confusion with comparison-led content for someone choosing between two options.</p>
+          <p class="kw-label">Keywords worked in</p>
+          <ul class="kw-chips">
+            <li>cerave vs cetaphil cleanser</li>
+            <li>best skincare products for men</li>
+            <li>what causes flaky skin on face</li>
+          </ul>
+          <details class="full">
+            <summary>Read the full draft</summary>
+            <div class="full-text">
+              <p>If you’ve been comparing “CeraVe vs Cetaphil cleanser,” you’re probably trying to figure out which one actually works better.</p>
+              <p>Both brands are popular for a reason. But they’re not exactly the same.</p>
+              <h4>What They Have in Common</h4>
+              <p>Both are:</p>
+              <ul><li>Fragrance-free</li><li>Designed for sensitive skin</li><li>Affordable (drugstore options)</li></ul>
+              <p>That’s why they show up so often when people search for the best skincare products for men.</p>
+              <h4>Where They’re Different</h4>
+              <p>CeraVe focuses more on restoring your skin barrier. Its cleansers include ceramides, which help repair and protect your skin.</p>
+              <p>Cetaphil is known for being gentle, but it doesn’t focus as much on rebuilding the skin barrier.</p>
+              <p>If your main issue is dryness or flaky skin, this difference actually matters.</p>
+              <h4>Which One Should You Choose?</h4>
+              <p>If you’re dealing with:</p>
+              <ul><li>Dry skin</li><li>Flaky patches</li><li>Tight feeling after washing</li></ul>
+              <p>CeraVe Hydrating Cleanser is usually the better choice.</p>
+              <p>It cleans your face without making dryness worse, which is something a lot of guys struggle with.</p>
+              <h4>What Causes Flaky Skin Anyway?</h4>
+              <p>A lot of people search “what causes flaky skin on face.”</p>
+              <p>Usually it comes down to:</p>
+              <ul><li>Overwashing</li><li>Using harsh products</li><li>Not moisturizing properly</li></ul>
+              <p>That’s why switching to a gentler cleanser can make a big difference.</p>
+              <h4>Final Thought</h4>
+              <p>If you want something simple, safe, and effective, both brands work.</p>
+              <p>But if your goal is fixing dryness long-term, CeraVe is designed more for that.</p>
+            </div>
+          </details>
+        </div>
+        <figure class="shot compact">
+          <button type="button" class="shot-btn" data-full="assets/article-2.jpg" data-alt="Opening of the article CeraVe vs Cetaphil Cleanser">
+            <img src="assets/article-2.jpg" alt="Opening of the article CeraVe vs Cetaphil Cleanser" loading="lazy" width="1181" height="1151">
+            <span class="shot-zoom">Enlarge</span>
+          </button>
+          <figcaption>Opening of the draft</figcaption>
+        </figure>
+      </article>
+
+      <!-- Article 3 -->
+      <article class="article" data-reveal>
+        <div class="article-meta">
+          <span class="article-n">Article 03</span>
+          <span class="intent-tag informational">Informational</span>
+          <h3>How to Pick the Right Cleanser (Without Wasting Money)</h3>
+          <p>Turns an overwhelming product choice into a practical guide to skin type and cleanser selection.</p>
+          <p class="kw-label">Keywords worked in</p>
+          <ul class="kw-chips">
+            <li>how to pick the right cleanser</li>
+            <li>fragrance free skincare for sensitive skin</li>
+            <li>difference between cleanser and face wash</li>
+          </ul>
+          <details class="full">
+            <summary>Read the full draft</summary>
+            <div class="full-text">
+              <p>Choosing a face wash shouldn’t feel complicated, but it does for a lot of people.</p>
+              <p>If you’ve searched “how to pick the right cleanser,” you’ve probably seen too many options with no clear answer.</p>
+              <p>Here’s how to actually figure it out.</p>
+              <h4>Step 1: Know Your Skin Type</h4>
+              <p>Before anything else, figure out if your skin is:</p>
+              <ul><li>Dry</li><li>Oily</li><li>Combination</li></ul>
+              <p>If your skin feels tight or rough, it’s probably dry.</p>
+              <p>That’s important because using the wrong cleanser can make things worse.</p>
+              <h4>Step 2: Avoid Harsh Ingredients</h4>
+              <p>A lot of face washes are too aggressive. They remove oil, but they also damage your skin barrier.</p>
+              <p>That’s why fragrance-free skincare for sensitive skin is usually the safer option.</p>
+              <p>It reduces irritation and keeps things simple.</p>
+              <h4>Step 3: Look for Barrier-Friendly Ingredients</h4>
+              <p>If you’re choosing between products, look for ingredients like:</p>
+              <ul><li>Ceramides</li><li>Hyaluronic acid</li></ul>
+              <p>These help your skin stay hydrated instead of drying out.</p>
+              <p>This is why products like CeraVe Hydrating Cleanser are popular—they’re designed to support your skin, not strip it.</p>
+              <h4>Step 4: Don’t Overcomplicate It</h4>
+              <p>You don’t need multiple cleansers.</p>
+              <p>A simple routine works best:</p>
+              <ul><li>One gentle cleanser</li><li>One moisturizer</li></ul>
+              <p>That’s it.</p>
+              <h4>Cleanser vs Face Wash (Quick Tip)</h4>
+              <p>If you’ve ever wondered about the difference between cleanser and face wash:</p>
+              <ul><li>Face wash = usually foaming, stronger</li><li>Cleanser = gentler, better for dry skin</li></ul>
+              <p>If your skin is dry, go with a cleanser.</p>
+            </div>
+          </details>
+        </div>
+        <figure class="shot compact">
+          <button type="button" class="shot-btn" data-full="assets/article-3.jpg" data-alt="Opening of the article How to Pick the Right Cleanser">
+            <img src="assets/article-3.jpg" alt="Opening of the article How to Pick the Right Cleanser" loading="lazy" width="1181" height="1201">
+            <span class="shot-zoom">Enlarge</span>
+          </button>
+          <figcaption>Opening of the draft</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <!-- 06 AI & SEO -->
+    <section class="section dark" id="ai">
+      <div class="head" data-reveal>
+        <p class="label">06 — AI &amp; SEO learning</p>
+        <h2>Search is changing. <em>The reader’s need still matters.</em></h2>
+        <p class="lead">
+          The project also explored how Google AI Overviews are changing SEO, and what that means for how blog
+          content should be written.
+        </p>
+      </div>
+
+      <div class="cards four">
+        <article class="card" data-reveal>
+          <span class="num">01</span>
+          <h3>Answer clearly</h3>
+          <p>Address specific questions directly and concisely.</p>
+        </article>
+        <article class="card" data-reveal style="--d:80ms">
+          <span class="num">02</span>
+          <h3>Use strong headings</h3>
+          <p>Clear headings and short explanations are easy for AI to pull summaries from.</p>
+        </article>
+        <article class="card" data-reveal style="--d:160ms">
+          <span class="num">03</span>
+          <h3>Stay close to intent</h3>
+          <p>Solve the problem behind the search, not just the keyword.</p>
+        </article>
+        <article class="card" data-reveal style="--d:240ms">
+          <span class="num">04</span>
+          <h3>Add depth</h3>
+          <p>Give readers value beyond what an AI summary can cover, so they have a reason to click.</p>
+        </article>
+      </div>
+
+      <blockquote class="quote" data-reveal>
+        “I would balance being informative upfront while still providing value in the full article.”
+        <cite>My reflection on writing for AI Overviews</cite>
+      </blockquote>
+    </section>
+
+    <!-- 07 TAKEAWAYS -->
+    <section class="section" id="takeaways">
+      <div class="head" data-reveal>
+        <p class="label">07 — Key takeaways</p>
+        <h2>Strategy starts <em>with intent.</em></h2>
+      </div>
+      <div class="cards three">
+        <article class="card" data-reveal>
+          <h3>SEO strategy</h3>
+          <p>Connect real search behavior to useful, brand-relevant content.</p>
+        </article>
+        <article class="card" data-reveal style="--d:80ms">
+          <h3>Audience targeting</h3>
+          <p>Let one defined persona shape the topics and the channel choice.</p>
+        </article>
+        <article class="card" data-reveal style="--d:160ms">
+          <h3>Search intent</h3>
+          <p>Separate learning queries from product-choice queries and write for each.</p>
+        </article>
+        <article class="card" data-reveal>
+          <h3>Keyword research</h3>
+          <p>Weigh trend, volume and difficulty alongside how well a query fits the persona.</p>
+        </article>
+        <article class="card" data-reveal style="--d:80ms">
+          <h3>Content strategy</h3>
+          <p>Turn priority queries into clear, practical article concepts.</p>
+        </article>
+        <article class="card" data-reveal style="--d:160ms">
+          <h3>AI-driven search</h3>
+          <p>Answer upfront, then add the depth that earns the click.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 08 TOOLS -->
+    <section class="section tinted" id="tools">
+      <div class="head" data-reveal>
+        <p class="label">08 — Tools &amp; methods</p>
+        <h2>What I <em>worked with.</em></h2>
+      </div>
+      <ul class="tools" data-reveal>
+        <li>Google Trends</li>
+        <li>Semrush</li>
+        <li>SEO</li>
+        <li>Search Intent Analysis</li>
+        <li>Content Strategy</li>
+        <li>Audience Research</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">Cherry<span>.</span></div>
+        <p>Designed &amp; built by <strong>Cherry</strong>.</p>
+      </div>
+      <a href="#top" class="to-top">Back to top
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+      </a>
+    </div>
+    <p class="disclaimer">
+      An independent student marketing project focused on CeraVe. Not affiliated with, or endorsed by, CeraVe or L’Oréal.
+      CeraVe is a trademark of its owner.
+    </p>
+  </footer>
+
+  <!-- Image viewer -->
+  <dialog class="lightbox" id="lightbox" aria-label="Enlarged image">
+    <button type="button" class="lb-close" id="lbClose" aria-label="Close image">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <img id="lbImg" alt="">
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
